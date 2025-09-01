@@ -41,12 +41,3 @@ output "private_subnet_cidrs" {
   value       = module.subnet.private_subnet_cidrs
 }
 
-output "nat_gateway_ids" {
-  description = "List of NAT Gateway IDs"
-  value       = module.subnet.nat_gateway_ids
-}
-
-output "nat_gateway_public_ips" {
-  description = "List of public Elastic IPs created for NAT Gateways"
-  value       = module.subnet.nat_gateway_public_ips
-}

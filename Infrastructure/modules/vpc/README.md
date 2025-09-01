@@ -49,5 +49,5 @@ module "vpc" {
 This VPC module is the foundation of our Zero Trust network architecture:
 - The VPC provides network isolation from other AWS accounts and VPCs
 - DNS support enables service discovery within the VPC
-- The Internet Gateway enables outbound connectivity (will be restricted via security groups and NACLs)
+- The Internet Gateway enables outbound connectivity 
 - Future iterations will add VPC Flow Logs for network monitoring

@@ -3,11 +3,6 @@ variable "vpc_id" {
   type        = string
 }
 
-variable "internet_gateway_id" {
-  description = "Internet Gateway ID for public subnet routing"
-  type        = string
-}
-
 variable "azs" {
   description = "List of availability zones"
   type        = list(string)
@@ -26,18 +21,6 @@ variable "private_subnet_cidrs" {
 variable "name" {
   description = "Name prefix for all resources"
   type        = string
-}
-
-variable "enable_nat_gateway" {
-  description = "Should be true to provision NAT Gateways for each private subnet"
-  type        = bool
-  default     = true
-}
-
-variable "single_nat_gateway" {
-  description = "Should be true to provision a single shared NAT Gateway across all private subnets"
-  type        = bool
-  default     = false
 }
 
 variable "tags" {
